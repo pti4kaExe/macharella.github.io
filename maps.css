@@ -179,3 +179,49 @@ body{
   .info{ right:8px; bottom:72px; width:140px; font-size:12px; padding:8px; }
   .t { padding:5px 8px; font-size:12px; }
 }
+/* iPhone 15 адаптация */
+@media (max-width: 430px) and (min-height: 932px) {
+  body {
+    padding: 0;
+    padding-top: max(70px, env(safe-area-inset-top));
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+  }
+  
+  .buttons {
+    top: max(16px, env(safe-area-inset-top) + 10px);
+    left: 16px;
+  }
+  
+  .layers {
+    top: max(80px, env(safe-area-inset-top) + 60px);
+    left: 16px;
+    right: 16px;
+    width: auto;
+  }
+  
+  #map {
+    width: 92vw;
+    height: 65vh;
+    max-height: 500px;
+  }
+  
+  .info {
+    bottom: max(90px, env(safe-area-inset-bottom) + 70px);
+    right: 16px;
+  }
+  
+  .time {
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+}
+
+@supports (padding: max(0px)) {
+  .buttons {
+    left: max(16px, env(safe-area-inset-left));
+  }
+  
+  .layers {
+    left: max(16px, env(safe-area-inset-left));
+    right: max(16px, env(safe-area-inset-right));
+  }
+}
