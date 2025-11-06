@@ -1,3 +1,4 @@
+let map;
 ymaps.ready(() => {
   let map, layer;
 
