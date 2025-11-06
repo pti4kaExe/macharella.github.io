@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="stylesheet" href="/css/glav.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>главная</title>
+</head>
+<body>
+<div class="main">
+  <div class="top">
+    <div class="left">
+      <div class="header">домашняя метеостанция</div>
+      <h1><b>Погода в один клик</b></h1>
+      <h2>всегда будь в курсе погоды, имея удобное веб-приложение под рукой</h2>
+  
+      <div class="buttons">
+        <a href="/html/prognoz.html" class="btn"><b>прогноз</b></a>
+        <a href="/html/maps.html" class="btn"><b>карты</b></a>
+      </div>
+    </div>
+
+    <div class="cloud-wrapper">
+      <div class="drop d1"></div>
+      <div class="drop d2"></div>
+      <div class="drop d3"></div>
+      <div class="drop d4"></div>
+      <div class="drop d5"></div>
+      <div class="cloud">
+        <div class="cloud-shape c1"></div>
+        <div class="cloud-shape c2"></div>
+        <div class="cloud-shape c3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-wrapper">
+    <div class="graph">
+      <svg viewBox="0 0 1000 190" preserveAspectRatio="none">
+        <path class="line-path"
+          d="M 0,95
+             C 100,85 150,65 200,75
+             C 300,95 350,145 420,150
+             C 500,150 520,135 580,115
+             C 650,85 700,65 750,70
+             C 820,75 880,105 920,100
+             C 960,95 980,90 1000,95"/>
+      </svg>
+    </div>
+
+    <div class="forecast">
+      <div>Утро<br><span>Лёгкий дождь</span></div>
+      <div>10:00<br><span>Пасмурно</span></div>
+      <div>12:00<br><span>Мелкий дождь</span></div>
+      <div>14:00<br><span>Облачно</span></div>
+      <div>16:00<br><span>Прояснения</span></div>
+      <div>18:00<br><span>Солнечно</span></div>
+      <div>Вечер<br><span>Ясно</span></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

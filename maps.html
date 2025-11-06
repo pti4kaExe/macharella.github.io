@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>карты погоды</title>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=7957861b-3034-4896-8e2d-352e63546b24"></script>
+<link rel="stylesheet" href="/css/maps.css">
+</head>
+<body>
+
+<div class="buttons">
+  <a href="/html/glav.html" class="btn"><b>главная</b></a>
+  <a href="/html/prognoz.html" class="btn"><b>прогноз</b></a>
+</div>
+
+<div class="layers">
+  <div class="l active" data-l="radar">Осадки</div>
+  <div class="l" data-l="temp">Температура</div>
+  <div class="l" data-l="wind">Ветер</div>
+  <div class="l" data-l="press">Давление</div>
+</div>
+
+<div id="map"></div>
+<div class="info" id="info">Загрузка...</div>
+<div class="time" id="time"></div>
+
+<script src="/js/maps.js"></script>
+</body>
+</html>

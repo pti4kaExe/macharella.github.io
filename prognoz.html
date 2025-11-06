@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>прогноз</title>
+
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/prognoz.css">
+</head>
+<body>
+  <div class="buttons">
+    <a href="/html/glav.html" class="btn"><b>главная</b></a>
+    <a href="/html/maps.html" class="btn"><b>карты</b></a>
+  </div>
+
+
+<button id="sidebarToggle" class="btn" style="display:none; position: absolute; right: 18px; top: 12px; z-index: 20;">Меню</button>
+
+  <div class="main">
+    <h1 id="cityName" class="fade">Город</h1>
+    <div class="subtitle fade" id="currentTemp">температура сейчас</div>
+    <div class="hourly fade" id="hourly"></div>
+
+    <h2 class="section-title fade">Прогноз на неделю</h2>
+    <div class="table-wrap fade">
+      <table id="weekTable" class="week-table" role="table" aria-label="Прогноз на 10 дней">
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>Погода</th>
+            <th>Мин / Макс</th>
+            <th>Осадки</th>
+            <th>Вероятность</th>
+            <th>Рассвет / Закат</th>
+          </tr>
+        </thead>
+        <tbody id="weekBody">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid">
+      <div class="card center fade" id="descCard">–</div>
+      <div class="card center fade" id="uvCard">–</div>
+      <div class="card center fade" id="sunCard">–</div>
+      <div class="card center fade" id="windCard">–</div>
+      <div class="card center fade" id="moonCard">–</div>
+      <div class="card center fade" id="rainCard">–</div>
+      <div class="card center fade" id="humidityCard">–</div>
+      <div class="card center fade" id="visibilityCard">–</div>
+      <div class="card center fade" id="pressureCard">–</div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="search-box">
+      <span>🌡️</span>
+      <input id="cityInput" placeholder="поиск" />
+      <span onclick="searchCity()">🔍</span>
+    </div>
+    <div class="city-list" id="savedCities"></div>
+  </div>
+  <script src="/js/prognoz.js"></script>
+</body>
+</html>
